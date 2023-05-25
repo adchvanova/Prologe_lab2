@@ -1,0 +1,34 @@
+clauses
+	/* Подписчик (ID,название,стоимость)*/
+	publication(11,"The New York Times",3). 
+	publication(12,"THE DAILY TELEGRAPH",2). 
+	publication(13,"THE ECONOMIST",4).
+	publication(14,"USA TODAY ",4).
+	publication(15,"Vogue",2).
+	publication(16,"Glamour",1).
+
+	/* Подписчик (ID,имя фамилия,возраст,адрес)*/
+	subscriber(21,"Tyler Durden",35,"4 Cheapside Street LONDON UK"). 
+	subscriber(22,"Marvin Brown",24,"425 Capitol Street Seattle USA").
+	subscriber(23,"David Sammers",24,"100b New Bond Street LIVERPOOL UK").
+	subscriber(24,"Suzanne Fox",19,"55 Larkspur California CA").
+	subscriber(25,"Carol Mikaelson",22,"59th Brooklin USA").
+
+	/* Подписался (id издания, id подписчика, дата начала, длительность в месяцах)*/
+	subscribed_to_publication(11,21,"April 2022",13).
+	subscribed_to_publication(11,22,"January 2022",15).
+	subscribed_to_publication(12,23,"May 2020",36).
+	subscribed_to_publication(13,22,"October 2021",19).
+	subscribed_to_publication(14,23,"June 2022",11).
+	subscribed_to_publication(14,24,"October 2022",7).
+	subscribed_to_publication(15,24,"July 2019",46).
+	subscribed_to_publication(15,25,"May 2021",24).
+	subscribed_to_publication(16,25,"March 2022",14).
+
+	/* Тип_издания(id издания, тип)*/
+	topics_of_publication(11,news).
+	topics_of_publication(12,news).
+	topics_of_publication(13,economy).
+	topics_of_publication(14,news).
+	topics_of_publication(15,fashion).
+	topics_of_publication(16,fashion).
