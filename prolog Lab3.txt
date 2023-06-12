@@ -1,4 +1,4 @@
-﻿implement main
+implement main
     open core, stdio, file
 
 domains
